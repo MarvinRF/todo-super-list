@@ -1,7 +1,7 @@
 import React from 'react'
 
 import * as S from './styles'
-import { useDispatch, useSelector } from 'react-redux'
+import { use, useSelector } from 'react-redux'
 import { alterarFiltro } from '../../store/reducers/filtro'
 import * as enums from '../../utils/enums/Tarefa'
 import { RootReducer } from '../../store'
@@ -13,7 +13,7 @@ export type Props = {
 }
 
 const FiltroCard = ({ legenda, criterio, valor }: Props) => {
-  const dispatch = useDispatch()
+  const  = use()
   const { filtro, tarefas } = useSelector((state: RootReducer) => state)
 
   const verificaEstaAtivo = () => {
@@ -34,7 +34,7 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
   }
 
   const filtrar = () => {
-    dispatch(
+    (
       alterarFiltro({
         criterio,
         valor

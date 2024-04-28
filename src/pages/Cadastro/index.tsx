@@ -1,7 +1,13 @@
-import React from 'react'
+import BarraLateral from '../../containers/BarraLateral'
+import Formulario from '../../containers/Formulario'
 
 export const Cadastro = () => {
-  return <div>nova Tarefa</div>
+  return (
+    <>
+      <BarraLateral />
+      <Formulario />
+    </>
+  )
 }
 
 export default Cadastro

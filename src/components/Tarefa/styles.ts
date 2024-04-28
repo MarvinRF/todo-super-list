@@ -1,3 +1,4 @@
+import { Label } from './../FiltroCard/styles'
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
@@ -27,12 +28,18 @@ export const Card = styled.div`
   padding: 16px;
   margin-bottom: 32px;
   border-radius: 16px;
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
 `
 
 export const Titulo = styled.h3`
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-left: 8px;
 `
 
 export const Tag = styled.span<TagProps>`
@@ -76,9 +83,7 @@ export const Botao = styled.button`
   border-radius: 8px;
   margin-right: 8px;
 `
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
-`
+
 export const BotaoCancelarRemover = styled(Botao)`
   background-color: ${variaveis.vermelho};
 `
